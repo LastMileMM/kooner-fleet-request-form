@@ -7,54 +7,55 @@
   <title>Kooner Fleet Work Request</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
       color: #333;
       padding: 2rem;
     }
     .form-container {
-      max-width: 600px;
+      max-width: 650px;
       margin: auto;
-      background: #fff;
+      background: #ffffff;
       padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      border-top: 8px solid #f57921;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      border-left: 10px solid #0e4a7b;
     }
     .form-container h2 {
       margin-top: 0;
-      color: #002f6c;
+      color: #0e4a7b;
     }
     label {
       display: block;
       margin-top: 1rem;
-      font-weight: bold;
+      font-weight: 600;
     }
     input, select, textarea {
       width: 100%;
-      padding: 0.6rem;
-      margin-top: 0.5rem;
+      padding: 0.75rem;
+      margin-top: 0.4rem;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 10px;
+      font-size: 1rem;
     }
     button {
-      background-color: #f57921;
+      background-color: #f57c00;
       color: white;
       border: none;
       padding: 0.8rem 1.5rem;
       font-size: 1rem;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
       margin-top: 1.5rem;
     }
     button:hover {
-      background-color: #dd6514;
+      background-color: #e56c00;
     }
   </style>
 </head>
 <body>
   <div class="form-container">
-    <h2>Kooner Fleet Work Request</h2>
+    <h2>Kooner Fleet Work Request Form</h2>
     <form action="mailto:a8e8f6f6.koonerfms.com@amer.teams.ms" method="POST" enctype="multipart/form-data">
       <label for="name">Customer Name</label>
       <input type="text" id="name" name="Customer Name" required>
@@ -64,6 +65,12 @@
 
       <label for="phone">Phone Number</label>
       <input type="tel" id="phone" name="Phone">
+
+      <label for="station">Station</label>
+      <input type="text" id="station" name="Station">
+
+      <label for="dsp">DSP</label>
+      <input type="text" id="dsp" name="DSP">
 
       <label for="vehicle">Vehicle ID / Plate</label>
       <input type="text" id="vehicle" name="Vehicle ID" required>
